@@ -1,0 +1,5 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///home/mathew/src/crowdsec-custom-bouncer/.github/workflows/build.yaml"
+  }
+}

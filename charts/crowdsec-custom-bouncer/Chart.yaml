@@ -1,0 +1,19 @@
+---
+apiVersion: v2
+appVersion: 1.0.0
+description: An image and helm chart for crowdsec-custom-bouncer
+name: periodic-scripts
+version: 1.0.0
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - periodic-scripts
+home: https://github.com/mwinters-stuff/crowdsec-custom-bouncer
+sources:
+  - https://github.com/crowdsecurity/cs-custom-bouncer
+maintainers:
+  - name: mwinters
+    email: mathew@winters.nz
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.4.2
