@@ -31,7 +31,7 @@ jobs:
     - name: Login to Harbor
       uses: docker/login-action@v2
       with:
-        registry: harbor.local.winters.nz
+        registry: harbor.winters.org.nz
         username: robot$github
         password: ${{ secrets.HARBOR }}
 
@@ -47,8 +47,8 @@ jobs:
         platforms: linux/amd64
         push: true
         tags: |
-          harbor.local.winters.nz/public/crowdsec-custom-bouncer:latest
-          harbor.local.winters.nz/public/crowdsec-custom-bouncer:${{steps.version.outputs.new_version}}
+          harbor.winters.org.nz/public/crowdsec-custom-bouncer:latest
+          harbor.winters.org.nz/public/crowdsec-custom-bouncer:${{steps.version.outputs.new_version}}
 
     - name: Chart version
       uses: mikefarah/yq@master
@@ -67,7 +67,7 @@ jobs:
       with:
         username: robot$github
         password: ${{ secrets.HARBOR }}
-        registry-url: 'https://harbor.local.winters.nz/chartrepo/public'
+        registry-url: 'https://harbor.winters.org.nz/chartrepo/public'
         force: true
         chart-folder: charts/crowdsec-custom-bouncer
 

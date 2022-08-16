@@ -7,7 +7,7 @@
 
 image:
   # -- image repository
-  repository: harbor.local.winters.nz/public/crowdsec-custom-bouncer
+  repository: harbor.winters.org.nz/public/crowdsec-custom-bouncer
   # -- image tag
   tag: "latest"
   # -- image pull policy
