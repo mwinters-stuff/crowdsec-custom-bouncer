@@ -18,8 +18,6 @@ steps:
   when:
     event:
       - tag
-      - push
-      - custom
 
 - name: version-release-chart
   image: harbor.winters.org.nz/hub-cache/mikefarah/yq:latest
@@ -34,8 +32,6 @@ steps:
   when:
     event:
       - tag
-      - push
-      - custom
 
 - name: build-release-chart
   user: 0
@@ -62,8 +58,6 @@ steps:
   when:
     event:
       - tag
-      - push
-      - custom
 
 - name: release
   image: harbor.winters.org.nz/hub-cache/library/ubuntu:20.04
@@ -75,5 +69,3 @@ steps:
   when:
     event:
       - tag
-      - push
-      - custom
