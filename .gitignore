@@ -1,0 +1,3 @@
+crowdsec-custom-bouncer-*.tgz
+charts/crowdsec-custom-bouncer/charts
+charts/crowdsec-custom-bouncer/Chart.lock
